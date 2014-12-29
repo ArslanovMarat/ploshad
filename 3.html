@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>
+Вычисляем площадь трапеции
+</title>
+
+</head>
+<body>
+<br>
+<br>
+
+<form name="f1" align=center>
+<p><img src="1.png" alt="Трапеция"></p>
+<br>
+
+<h3>Введите основания трапеции:</h3>
+        <input type="text" name="a" id="a" style="font-size: 75%">
+        <input type="text" name="b" id="b" style="font-size: 75%">
+<h3>Введите высоту трапеции:</h3>
+	<input type="text" name="h" id="h" style="font-size: 75%">
+<h3>Площадь трапеции:</h3>
+<p><img src="2.png" alt="Площадь трапеции"></p>
+<br>
+<input type="button" value="Определить" onClick="ploshad();" style="font-size: 60%">
+<br>
+<br>
+        <input type="text" name="d" id="d" style="font-size: 75%">
+           
+</form>
+ </body>
+<script type="text/javascript">
+function ploshad() {
+
+var a = parseInt(document.f1.a.value);
+var b = parseInt(document.f1.b.value);
+var h = parseInt(document.f1.h.value);
+var d = parseInt(document.f1.d.value);
+var pl = (h*(a+b))/2; 
+document.getElementById("d").value=(pl);
+
+}
+</script>
+</html>
